@@ -25,6 +25,8 @@ O objetivo geral é investigar o sistema de transporte público de São Paulo de
 │
 ├── docs/
 │
+├── images/
+│
 ├── notebooks/
 │
 ├── outputs/
