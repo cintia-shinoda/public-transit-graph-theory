@@ -54,8 +54,8 @@ O objetivo geral é investigar o sistema de transporte público de São Paulo de
 
 ## Notebooks
 
-|  | Notebook | Descrição | Link |
-|---|---|---|---|
-| 0 | Exploração do Dryad | Análise exploratória dos dados de bilhetagem da SPTrans | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/tcc-lab/blob/main/notebooks/00-exploracao-dryad.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-| 1 | Exploração do GTFS | Análise exploratória dos dados GTFS da SPTrans | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/tcc-lab/blob/main/notebooks/01_exploracao-gtfs.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+|  | Notebook | Descrição |
+|---|---|---|
+| 0 | [Exploração do Dryad](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/00-exploracao-dryad.ipynb) | Análise exploratória dos dados de bilhetagem da SPTrans |
+| 1 | [Exploração do GTFS](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/01_exploracao-gtfs.ipynb) | Análise exploratória dos dados GTFS da SPTrans |
 </a> |
