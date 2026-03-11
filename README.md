@@ -59,3 +59,8 @@ O objetivo geral é investigar o sistema de transporte público de São Paulo de
 | 0 | [Exploração do Dryad](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/00-exploracao-dryad.ipynb) | Análise exploratória dos dados de bilhetagem da SPTrans |
 | 1 | [Exploração do GTFS](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/01_exploracao-gtfs.ipynb) | Análise exploratória dos dados GTFS da SPTrans |
 </a> |
+
+
+----
+
+<!-- Majdoub, Bassam (2018). Bilhetagem de Transporte Público - São Paulo [Dataset]. Dryad. Disponível em: https://doi.org/10.15146/R3VM28. Acesso em: 10 mar. 2026. -->
