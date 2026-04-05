@@ -38,27 +38,37 @@ tcc-lab/
 │
 ├── docs/
 │   ├── bibliografia-inicial/
+│   │   ├── artigos/
+│   │   ├── fichas-de-leitura/
+│   │   └── bibliografia-inicial.ipynb
+│   │
 │   ├── reunioes/
+│   │
 │   ├── 0-tema.md                  # Fernando Miguel Escribano Martinez
 │   └── 1-fontes-de-dados.pdf      # Thiago Akira Ferreira
 │
 ├── images/
+│   ├── GTFS-SPTrans-Tabela.jpg  
 │   └── MER-GTFS-SPTrans.png       # Willy Paulino de Oliveira Gomes
 │
 ├── notebooks/
 │   ├── 00_eda-dryad.ipynb
-│   └── 01_eda-gtfs.ipynb
+│   ├── 01_eda-gtfs.ipynb
+│   ├── 02_teste-OSMnx.ipynb
+│   ├── 03_hugging-face.ipynb
+│   └── sp_transit_classifier.joblib
 │
 ├── outputs/
 │   ├── headway_por_hora.png
 │   ├── headway-por-horario.png
 │   ├── mapa_centralidades.png
 │   ├── mapa_fluxo_rede.png
-│   ├── mapa_interativo_centralidades.html
+│   ├── mapa_interativo_centralidade.html
 │   ├── mapa_paradas_modal_sp.png
 │   └── mapa-headway-por-horario.png
 │
 ├── .gitignore
+├── config.json
 ├── README.md
 └── requirements.txt
 ```
