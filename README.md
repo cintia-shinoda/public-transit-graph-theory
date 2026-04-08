@@ -1,4 +1,4 @@
-# Testes para o TCC
+# Vulnerability and Resilience of São Paulo's Public Transit Network: A Topological Analysis Based on Graph Theory
 
 <p align="center">
   <img src= "https://img.shields.io/badge/status-in%20progress-yellow" alt="Status do Projeto" />
@@ -9,21 +9,13 @@
 
 <br>
 
-Este repositório contém os testes realizados para o Trabalho de Conclusão de Curso (TCC) **"VULNERABILIDADE E RESILIÊNCIA DA REDE DE TRANSPORTE PÚBLICO DE SÃO PAULO: UMA ANÁLISE TOPOLÓGICA BASEADA EM TEORIA DOS GRAFOS"** requerimento do curso Bacharelado em Ciência de Dados na UNIVESP (Universidade Virtual do Estado de São Paulo).
-
- Os testes foram conduzidos para exploração e validar as hipóteses e os resultados apresentados no trabalho.
-
-
-
- <!-- "Este trabalho propõe uma abordagem interdisciplinar fundamentada na Inteligência Urbana para enfrentar os desafios críticos de mobilidade na Região Metropolitana de São Paulo, utilizando o "rastro digital" gerado pelos sistemas de transporte para transformar a gestão reativa em uma governança preditiva.
-Descrição do Problema
-O problema central reside na ineficiência sistêmica das megacidades, onde o transporte público opera sob constante pressão de fluxos massivos e vulnerabilidades a interrupções. Tradicionalmente, as análises de transporte em São Paulo são feitas de forma desacoplada — tratando ônibus, metrô e trens como redes independentes —, o que resulta na perda de propriedades fundamentais sobre a conectividade global e sobre como falhas em uma sub-rede impactam todo o ecossistema urbano. Além disso, a saturação do sistema viário impõe altos custos econômicos e ambientais, com prejuízos bilionários relacionados ao tempo perdido e às emissões de gases de efeito estufa.
-Objetivos do Trabalho
-O objetivo geral é investigar o sistema de transporte público de São Paulo de forma acoplada, realizando uma análise sistêmica de seus fluxos e de sua resiliência através de métricas de redes complexas." -->
+This repository contains analysis and tests conducted to explore and validate the hypotheses and results presented to the Undergraduate's Final Course Project (TCC): **“VULNERABILITY AND RESILIENCE OF THE SÃO PAULO PUBLIC TRANSIT NETWORK: A TOPOLOGICAL ANALYSIS BASED ON GRAPH THEORY”** ("Vulnerabilidade E Resiliência da Rede de Transporte Público de São Paulo: Uma Análise Topológica Baseada em Teoria dos Grafos"), a requirement for the Bachelor's Degree in Data Science at UNIVESP (Virtual University of the State of São Paulo).
 
 ---
 
-## Estrutura
+
+
+## Repository Structure
 
 ```bash
 tcc-lab/
@@ -37,25 +29,19 @@ tcc-lab/
 │       └── metricas_centralidade.csv
 │
 ├── docs/
-│   ├── bibliografia-inicial/
-│   │   ├── artigos/
-│   │   ├── fichas-de-leitura/
-│   │   └── bibliografia-inicial.ipynb
-│   │
-│   ├── reunioes/
-│   │
-│   ├── 0-tema.md                  # Fernando Miguel Escribano Martinez
-│   └── 1-fontes-de-dados.pdf      # Thiago Akira Ferreira
+│   ├── initial-bibliography/
+│   │   ├── papers/
+│   │   ├── reading-outlines/
+│   │   └── initial-bibliography.ipynb
 │
 ├── images/
-│   ├── GTFS-SPTrans-Tabela.jpg  
-│   └── MER-GTFS-SPTrans.png       # Willy Paulino de Oliveira Gomes
+│   └── GTFS-SPTrans-Tables.png
 │
 ├── notebooks/
 │   ├── 00_eda-dryad.ipynb
 │   ├── 01_eda-gtfs.ipynb
-│   ├── 02_teste-OSMnx.ipynb
-│   ├── 03_hugging-face.ipynb
+│   ├── 02_test-OSMnx.ipynb
+│   ├── 03_model-classification-hugging-face.ipynb
 │   └── sp_transit_classifier.joblib
 │
 ├── outputs/
@@ -73,32 +59,56 @@ tcc-lab/
 └── requirements.txt
 ```
 
-## Dados
+---
+
+## Datasets
+
 - Dryad: https://datadryad.org/dataset/doi:10.15146/R3VM28
 - GTFS SPTrans: https://www.sptrans.com.br/desenvolvedores/
 - IBGE: https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/
 
+---
 
 ## Stack
 - Python 3.11.x
 - Pandas
-- Geopandas
+- Numpy
+- Matplotlib
 - NetworkX
+- Geopandas
+- Folium
+- OSMnx
 
+---
 
 ## Notebooks
 
-|  | Notebook | Descrição |
+|  | Notebook | Description |
 |---|---|---|
-| 0 | [Análise Exploratória Dryad](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/00_eda-dryad.ipynb) | Análise exploratória dos dados de bilhetagem da SPTrans |
-| 1 | [Análise Exploratória do GTFS-SPTrans](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/01_eda-gtfs.ipynb) | Análise exploratória dos dados GTFS da SPTrans |
-</a> |
+| 0 | [Dryad's EDA](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/00_eda-dryad.ipynb) | Exploratory data analysis of a sample of ticketing data from SPTrans |
+| 1 | [GTFS-SPTrans' EDA](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/01_eda-gtfs.ipynb) | Exploratory analysis of GTFS from SPTrans |
+| 2 | [OSMnx Test](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/02_test-OSMnx.ipynb) | Testing OSMnx for mapping and analyzing the transportation network of São Paulo |
+| 3 | [Hugging Face's SPTrans Classifier Model](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/03_hugging-face.ipynb) | Implementation of a classification model for SPTrans data |
 
+---
 
-----
+## 
 
-<!-- Majdoub, Bassam (2018). Bilhetagem de Transporte Público - São Paulo [Dataset]. Dryad. Disponível em: https://doi.org/10.15146/R3VM28. Acesso em: 10 mar. 2026. -->
+1. Clone repository:
+```bash
+git clone https://github.com/cintia-shinoda/tcc-lab.git
 
-<!-- SPTrans. GTFS . Disponível em https://www.sptrans.com.br/desenvolvedores/perfil-desenvolvedor/. Acesso em 10 mar. 2026. -->
+cd tcc-lab
+```
 
-<!-- IBGE. Malhas Municipais. Disponível em: https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/. Acesso em: 10 mar. 2026. -->
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run Jupyter Notebook:
+```bash
+jupyter notebook
+```
+
+Open the notebooks in the `notebooks/` directory to explore the analyses.
