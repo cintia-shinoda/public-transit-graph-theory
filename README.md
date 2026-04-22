@@ -38,20 +38,29 @@ tcc-lab/
 │   └── GTFS-SPTrans-Tables.png
 │
 ├── notebooks/
-│   ├── 00_eda-dryad.ipynb
-│   ├── 01_eda-gtfs.ipynb
-│   ├── 02_test-OSMnx.ipynb
-│   ├── 03_model-classification-hugging-face.ipynb
-│   └── sp_transit_classifier.joblib
+│   ├── exploratory/
+│   │   ├── 00_eda-dryad.ipynb
+│   │   ├── 01_research-gtfs.ipynb
+│   │   ├── 02_test-OSMnx.ipynb
+│   │   ├── 03_model-classification-hugging-face.ipynb
+│   │   └── sp_transit_classifier.joblib
+│   ├── 01_eda_gtfs.ipynb
+│   ├── 02_grafo.ipynb
+│   ├── 03_vulnerabilidade.ipynb
+│   ├── 04_resiliencia.ipynb
+│   └── 05_modelo-classificacao.ipynb
 │
 ├── outputs/
 │   ├── headway_por_hora.png
 │   ├── headway-por-horario.png
+│   ├── hist_graus_antes.png
+│   ├── mapa_antes_depois_integracao.png
 │   ├── mapa_centralidades.png
 │   ├── mapa_fluxo_rede.png
 │   ├── mapa_interativo_centralidade.html
 │   ├── mapa_paradas_modal_sp.png
-│   └── mapa-headway-por-horario.png
+│   ├── mapa-headway-por-horario.png
+│   └── mapas_regionais_integracao.png
 │
 ├── .gitignore
 ├── config.json
@@ -81,14 +90,30 @@ tcc-lab/
 
 ---
 
-## Notebooks
+<!-- ## Notebooks de Exploração
 
 |  | Notebook | Description |
 |---|---|---|
 | 0 | [Dryad's EDA](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/00_eda-dryad.ipynb) | Exploratory data analysis of a sample of ticketing data from SPTrans |
 | 1 | [GTFS-SPTrans' EDA](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/01_eda-gtfs.ipynb) | Exploratory analysis of GTFS from SPTrans |
 | 2 | [OSMnx Test](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/02_test-OSMnx.ipynb) | Testing OSMnx for mapping and analyzing the transportation network of São Paulo |
-| 3 | [Hugging Face's SPTrans Classifier Model](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/03_hugging-face.ipynb) | Implementation of a classification model for SPTrans data |
+| 3 | [Hugging Face's SPTrans Classifier Model](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/03_hugging-face.ipynb) | Implementation of a classification model for SPTrans data | -->
+
+## Notebooks
+
+| # | Notebook | Open in Colab |
+|---|---|---|
+| 1 | [Análise Exploratória do GTFS-SPTrans](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/1_eda_gtfs.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/1_eda_gtfs.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a> |
+| 2 | [Modelagem do Grafo, Componentes e Medidas de Centralidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a> |
+| 3 | [Análise de Vulnerabilidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/3-vulnerabilidade.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/3-vulnerabilidade.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a> |
+| 4 | [Simulação - Resiliência](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4-resiliencia.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4-resiliencia.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a> |
+| 5 | [Modelagem Preditiva de Criticidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/5-modelo-classificacao.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/5-modelo-classificacao.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a> |
+
 
 ---
 
