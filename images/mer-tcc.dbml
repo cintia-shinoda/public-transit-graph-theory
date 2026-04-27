@@ -1,0 +1,47 @@
+// =============================================================
+//              Diagrama ER do GTFS da SPTrans
+// Para uso em dbdiagram.io (https://dbdiagram.io)
+// =============================================================
+
+
+Project gtfs_sptrans {
+  database_type: 'GTFS'
+  Note: 'Estrutura do feed GTFS estático da SPTrans'
+}
+
+// ---------- Entidades centrais ----------
+
+Table routes {
+  route_id          varchar [pk]
+  agency_id         int     [ref: > agency.agency_id]
+  route_short_name  varchar
+  route_long_name   varchar
+  route_type        int
+  route_color       varchar
+  route_text_color  varchar
+}
+
+Table trips {
+  trip_id        varchar [pk]
+  route_id       varchar [ref: > routes.route_id]
+  service_id     varchar [ref: > calendar.service_id]
+  shape_id       varchar
+  trip_headsign  varchar
+  direction_id   int
+}
+
+Table stops {
+  stop_id    int     [pk]
+  stop_name  varchar
+  stop_desc  varchar
+  stop_lat   float
+  stop_lon   float
+}
+
+Table stop_times {
+  trip_id         varchar [pk, ref: > trips.trip_id]
+  stop_sequence   int     [pk]
+  stop_id         int     [ref: > stops.stop_id]
+  arrival_time    varchar
+  departure_time  varchar
+}

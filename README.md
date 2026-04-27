@@ -76,6 +76,8 @@ tcc-lab/
 - GTFS SPTrans: https://www.sptrans.com.br/desenvolvedores/
 - IBGE: https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/
 
+<!-- ERM-GTFS: <iframe width="560" height="315" src='https://dbdiagram.io/e/69ec0665c6a36f9c1b76016a/69ec0684c6a36f9c1b760206'> </iframe> -->
+
 ---
 
 ## Stack
