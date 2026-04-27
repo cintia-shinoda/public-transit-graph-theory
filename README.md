@@ -105,16 +105,11 @@ tcc-lab/
 
 | # | Notebook | Open in Colab |
 |---|---|---|
-| 1 | [Análise Exploratória do GTFS-SPTrans](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/1_eda_gtfs.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/1_eda_gtfs.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> |
-| 2 | [Modelagem do Grafo, Componentes e Medidas de Centralidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> |
-| 3 | [Análise de Vulnerabilidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/3_vulnerabilidade.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/3_vulnerabilidade.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> |
-| 4 | [Simulação - Resiliência](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4_resiliencia.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4_resiliencia.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> |
-| 5 | [Modelagem Preditiva de Criticidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/5_modelo-classificacao.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/5_modelo-classificacao.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> |
+| 1 | [Análise Exploratória do GTFS-SPTrans](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/1_eda_gtfs.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/1_eda_gtfs.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| 2 | [Modelagem do Grafo, Componentes e Medidas de Centralidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| 3 | [Análise de Vulnerabilidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/3_vulnerabilidade.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/3_vulnerabilidade.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| 4 | [Simulação - Resiliência](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4_resiliencia.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4_resiliencia.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| 5 | [Modelagem Preditiva de Criticidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/5_modelo-classificacao.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/5_modelo-classificacao.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 
 
 ---
