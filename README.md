@@ -2,9 +2,9 @@
 
 <p align="center">
   <img src= "https://img.shields.io/badge/status-in%20progress-yellow" alt="Status do Projeto" />
-  <img src="https://img.shields.io/github/last-commit/cintia-shinoda/tcc-lab" alt="GitHub Last Commit" />
-  <img src="https://img.shields.io/github/forks/cintia-shinoda/tcc-lab" alt="GitHub Forks" />
-  <img src="https://img.shields.io/github/stars/cintia-shinoda/tcc-lab" alt="GitHub Stars" />
+  <img src="https://img.shields.io/github/last-commit/cintia-shinoda/public-transit-graph-theory" alt="GitHub Last Commit" />
+  <img src="https://img.shields.io/github/forks/cintia-shinoda/public-transit-graph-theory" alt="GitHub Forks" />
+  <img src="https://img.shields.io/github/stars/cintia-shinoda/public-transit-graph-theory" alt="GitHub Stars" />
 </p>
 
 <br>
@@ -13,12 +13,33 @@ This repository contains analysis and tests conducted to explore and validate th
 
 ---
 
+## Key Findings
+#### Estação Brás is the bottleneck of the network
+With only 7 direct neighbors, the Brás CPTM station concentrates approximately 38% of the shortest paths of the network (classic articulator node in the complex networks paradigm - Albert, Jeong & Barabási, 2000). Its removal has disproportional impact to its local connectivity.
 
+<img src="../outputs/mapa_top10_centralidades.png" alt="Top 10 critical nodes" size="50%"/>
+
+#### The network is resilient to random failures, but vulnerable to targeted attacks
+Empirical confirmation of the Albert-Barabási (2000) paradigm:
+
+| Scenario | Fraction needed for LCC < 50% |
+|---|:---:|
+| Random Failure | > 20% (not reached) |
+| Targeted Attack by *Degree Centrality* | **9%** |
+
+#### Centrality metrics are complementary
+Only 3 stations (Brás, Luz and Corinthians-Itaquera) appear in more than one top-10 ranking, and none of them appears in all three simultaneously. Each metric identifies a distinct dimension of criticality.
+
+#### Institutional limit of the SPTrans network
+48 CPTM stations along branches extending to municipalities of the São Paulo Metropolitan Region remain disconnected from the bus network even with the transfer radius extended to 600 meters. The limit is not methodological, but institutional: SPTrans operates exclusively within the city of São Paulo.
+
+
+---
 
 ## Repository Structure
 
 ```bash
-tcc-lab/
+public-transit-graph-theory/
 ├── data/
 │   ├── raw/
 │   │   ├── dryad/
@@ -81,14 +102,16 @@ tcc-lab/
 ---
 
 ## Stack
-- Python 3.11.x
-- Pandas
-- Numpy
-- Matplotlib
-- NetworkX
-- Geopandas
-- Folium
-- OSMnx
+
+| Library | Purpose |
+|---|---|
+| Python 3.11.x | Core programming language |
+| pandas, NumPy | Tabular data manipulation |
+| NetworkX | Graph modeling and analysis |
+| GeoPandas | Geospatial operations |
+| Matplotlib | Data visualization |
+| SciPy (cKDTree) | Intermodal integration by radius |
+| pyarrow | Parquet file handling |
 
 ---
 
@@ -96,10 +119,10 @@ tcc-lab/
 
 |  | Notebook | Description |
 |---|---|---|
-| 0 | [Dryad's EDA](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/00_eda-dryad.ipynb) | Exploratory data analysis of a sample of ticketing data from SPTrans |
-| 1 | [GTFS-SPTrans' EDA](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/01_eda-gtfs.ipynb) | Exploratory analysis of GTFS from SPTrans |
-| 2 | [OSMnx Test](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/02_test-OSMnx.ipynb) | Testing OSMnx for mapping and analyzing the transportation network of São Paulo |
-| 3 | [Hugging Face's SPTrans Classifier Model](https://github.com/cintia-shinoda/tcc-lab/blob/main/notebooks/03_hugging-face.ipynb) | Implementation of a classification model for SPTrans data | -->
+| 0 | [Dryad's EDA](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/00_eda-dryad.ipynb) | Exploratory data analysis of a sample of ticketing data from SPTrans |
+| 1 | [GTFS-SPTrans' EDA](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/01_eda-gtfs.ipynb) | Exploratory analysis of GTFS from SPTrans |
+| 2 | [OSMnx Test](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/02_test-OSMnx.ipynb) | Testing OSMnx for mapping and analyzing the transportation network of São Paulo |
+| 3 | [Hugging Face's SPTrans Classifier Model](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/03_hugging-face.ipynb) | Implementation of a classification model for SPTrans data | -->
 
 ## Notebooks
 
@@ -114,23 +137,27 @@ tcc-lab/
 
 ---
 
-## 
+## Running the Project
 
 1. Clone repository:
 ```bash
-git clone https://github.com/cintia-shinoda/tcc-lab.git
+git clone https://github.com/cintia-shinoda/public-transit-graph-theory.git
 
-cd tcc-lab
+cd public-transit-graph-theory
 ```
 
-2. Install dependencies:
+2. Create a virtual environment:
+```bash
+python3.11 -m venv venv
+
+# MacOS / Linux: 
+source venv/bin/activate
+
+# Windows:
+venv\Scripts\activate
+```
+
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
-3. Run Jupyter Notebook:
-```bash
-jupyter notebook
-```
-
-Open the notebooks in the `notebooks/` directory to explore the analyses.
