@@ -7,6 +7,8 @@
   <img src="https://img.shields.io/github/stars/cintia-shinoda/public-transit-graph-theory" alt="GitHub Stars" />
 </p>
 
+<img src="outputs/mapa_paradas_modal_sp_rmsp.png" alt="Map of public transit stops in the SPTrans network" width="100%">
+
 <br>
 
 This repository contains analysis and tests conducted to explore and validate the hypotheses and results presented to the Undergraduate's Final Course Project (TCC): **“VULNERABILITY AND RESILIENCE OF THE SÃO PAULO PUBLIC TRANSIT NETWORK: A TOPOLOGICAL ANALYSIS BASED ON GRAPH THEORY”** ("Vulnerabilidade e Resiliência da Rede de Transporte Público de São Paulo: Uma Análise Topológica Baseada em Teoria dos Grafos"), a requirement for the Bachelor's Degree in Data Science at UNIVESP (Virtual University of the State of São Paulo).
@@ -16,8 +18,6 @@ This repository contains analysis and tests conducted to explore and validate th
 ## Key Findings
 #### Estação Brás is the bottleneck of the network
 With only 7 direct neighbors, the Brás CPTM station concentrates approximately 38% of the shortest paths of the network (classic articulator node in the complex networks paradigm - Albert, Jeong & Barabási, 2000). Its removal has disproportional impact to its local connectivity.
-
-<img src="../outputs/mapa_top10_centralidades.png" alt="Top 10 critical nodes" size="50%"/>
 
 #### The network is resilient to random failures, but vulnerable to targeted attacks
 Empirical confirmation of the Albert-Barabási (2000) paradigm:
@@ -32,7 +32,6 @@ Only 3 stations (Brás, Luz and Corinthians-Itaquera) appear in more than one to
 
 #### Institutional limit of the SPTrans network
 48 CPTM stations along branches extending to municipalities of the São Paulo Metropolitan Region remain disconnected from the bus network even with the transfer radius extended to 600 meters. The limit is not methodological, but institutional: SPTrans operates exclusively within the city of São Paulo.
-
 
 ---
 
@@ -87,11 +86,22 @@ public-transit-graph-theory/
 
 ## Datasets
 
-- Dryad: https://datadryad.org/dataset/doi:10.15146/R3VM28
-- GTFS SPTrans: https://www.sptrans.com.br/desenvolvedores/
-- IBGE: https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/
+| Dataset | Link |
+|---|---|
+| GTFS SPTrans | https://www.sptrans.com.br/desenvolvedores/ |
+| IBGE | https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/ |
 
-ERM-GTFS: <iframe width="100%" height="100%" src='https://dbdiagram.io/e/69ec0665c6a36f9c1b76016a/69ec0684c6a36f9c1b760206'> </iframe>
+
+<br>
+
+### Entity-Relationship Model
+ERM-GTFS-SPTrans: [View the complete interactive diagram](https://dbdiagram.io/e/69ec0665c6a36f9c1b76016a/69ec0684c6a36f9c1b760206)
+
+<br>
+
+
+<img src="images/GTFS-SPTrans/MER-Reduzido.svg" alt="Reduced Entity-Relationship Model of GTFS-SPTrans" width="100%">
+
 
 ---
 
