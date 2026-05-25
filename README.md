@@ -9,7 +9,7 @@
 
 <br>
 
-This repository contains analysis and tests conducted to explore and validate the hypotheses and results presented to the Undergraduate's Final Course Project (TCC): **“VULNERABILITY AND RESILIENCE OF THE SÃO PAULO PUBLIC TRANSIT NETWORK: A TOPOLOGICAL ANALYSIS BASED ON GRAPH THEORY”** ("Vulnerabilidade E Resiliência da Rede de Transporte Público de São Paulo: Uma Análise Topológica Baseada em Teoria dos Grafos"), a requirement for the Bachelor's Degree in Data Science at UNIVESP (Virtual University of the State of São Paulo).
+This repository contains analysis and tests conducted to explore and validate the hypotheses and results presented to the Undergraduate's Final Course Project (TCC): **“VULNERABILITY AND RESILIENCE OF THE SÃO PAULO PUBLIC TRANSIT NETWORK: A TOPOLOGICAL ANALYSIS BASED ON GRAPH THEORY”** ("Vulnerabilidade e Resiliência da Rede de Transporte Público de São Paulo: Uma Análise Topológica Baseada em Teoria dos Grafos"), a requirement for the Bachelor's Degree in Data Science at UNIVESP (Virtual University of the State of São Paulo).
 
 ---
 
@@ -40,48 +40,42 @@ Only 3 stations (Brás, Luz and Corinthians-Itaquera) appear in more than one to
 
 ```bash
 public-transit-graph-theory/
-├── data/
-│   ├── raw/
+├── data/              # Datasets and data artifacts
+│   ├── raw/           # Initial datasets (unprocessed)
 │   │   ├── dryad/
 │   │   ├── gtfs/
 │   │   └── ibge/
 │   │
-│   └── processed/
-│       └── metricas_centralidade.csv
+│   └── processed/     # Data Artifacts
 │
-├── docs/
-│   ├── initial-bibliography/
+├── docs/              # Documentation & References
+│   ├── bibliography/
 │   │   ├── papers/
-│   │   ├── reading-outlines/
-│   │   └── initial-bibliography.ipynb
-│
-├── images/
-│   └── GTFS-SPTrans-Tables.png
+│   │   └── reading-outlines/
 │
 ├── notebooks/
-│   ├── exploratory/
+│   ├── exploratory/   # Initial data exploration and testing
 │   │   ├── 00_eda-dryad.ipynb
 │   │   ├── 01_research-gtfs.ipynb
 │   │   ├── 02_test-OSMnx.ipynb
 │   │   ├── 03_model-classification-hugging-face.ipynb
 │   │   └── sp_transit_classifier.joblib
-│   ├── 01_eda_gtfs.ipynb
-│   ├── 02_grafo.ipynb
-│   ├── 03_vulnerabilidade.ipynb
-│   ├── 04_resiliencia.ipynb
+│   ├── 01_eda_gtfs.ipynb         # Exploratory Data Analysis
+│   ├── 02_grafo.ipynb            # Graph modeling, Cmponents and Creation of Intermodal Integration
+│   ├── 03_vulnerabilidade.ipynb  # Vulnerability Analysis
+│   ├── 04_resiliencia.ipynb      # Resilience Analysis
 │   └── 05_modelo-classificacao.ipynb
 │
 ├── outputs/
-│   ├── headway_por_hora.png
-│   ├── headway-por-horario.png
-│   ├── hist_graus_antes.png
-│   ├── mapa_antes_depois_integracao.png
-│   ├── mapa_centralidades.png
-│   ├── mapa_fluxo_rede.png
-│   ├── mapa_interativo_centralidade.html
-│   ├── mapa_paradas_modal_sp.png
-│   ├── mapa-headway-por-horario.png
-│   └── mapas_regionais_integracao.png
+│   ├── curvas_resiliencia_kappa.png     # Molloy-Reed parameter kappa
+│   ├── curvas_resiliencia_lcc.png       # Largest Connected Component (LCC)
+│   ├── mapa_paradas_modal_sp_rmsp.png   # SPTrans network 
+│   ├── mapa_paradas_modal_sp.png        
+│   ├── mapa_top10_centralidades.png     # Top 10 (degree, betweenness, closeness) critical nodes
+│   └── mapas_regionais_integracao.png   # Intermodal Integration (3 km radius)
+│
+├── src/
+│   └── notebook_setup.py
 │
 ├── .gitignore
 ├── config.json
@@ -97,7 +91,7 @@ public-transit-graph-theory/
 - GTFS SPTrans: https://www.sptrans.com.br/desenvolvedores/
 - IBGE: https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/
 
-<!-- ERM-GTFS: <iframe width="560" height="315" src='https://dbdiagram.io/e/69ec0665c6a36f9c1b76016a/69ec0684c6a36f9c1b760206'> </iframe> -->
+ERM-GTFS: <iframe width="100%" height="100%" src='https://dbdiagram.io/e/69ec0665c6a36f9c1b76016a/69ec0684c6a36f9c1b760206'> </iframe>
 
 ---
 
@@ -129,13 +123,12 @@ public-transit-graph-theory/
 | # | Notebook |
 |---|---|
 | 1 | [Análise Exploratória do GTFS-SPTrans](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/1_eda_gtfs.ipynb) |
-| 2 | [Modelagem do Grafo, Componentes e Medidas de Centralidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb) |
+| 2 | [Modelagem do Grafo, Componentes e Integração Intermodal](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/2_grafo.ipynb) |
 | 3 | [Análise de Vulnerabilidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/3_vulnerabilidade.ipynb) |
-| 4 | [Simulação - Resiliência](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4_resiliencia.ipynb) |
-| 5 | [Modelagem Preditiva de Criticidade](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/5_modelo-classificacao.ipynb) |
-
+| 4 | [Análise de Resiliência](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/4_resiliencia.ipynb) |
 
 ---
+
 
 ## Running the Project
 
@@ -161,3 +154,70 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+<!-- ## Licensing
+
+### Source Code
+All source code developed in this repository is licensed under the **Apache License 2.0**.
+See [`LICENSE`](LICENSE).
+
+
+### Documentation and Written Content
+Academic documentation, explanatory texts, author-created diagrams, and written materials are licensed under: **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**
+
+This allows:
+- Sharing
+- Adaptation
+- Citation
+- 
+Provided that:
+- Proper attribution is given
+- No commercial use is made
+
+
+### Third-Party Data
+This repository uses publicly available third-party datasets, including:
+- Brazilian Institute of Geography and Statistics (IBGE)
+- São Paulo Transport Authority (SPTrans)
+**These datasets are NOT covered by this repository’s licenses.**
+
+Their use remains subject to the original:
+- terms of use
+- access policies
+- attribution requirements
+- licensing conditions established by the official providers
+
+Please refer to the official sources for details.
+
+
+## Data Attribution
+
+### IBGE
+Source: Brazilian Institute of Geography and Statistics (IBGE)
+
+Public datasets used for academic and analytical purposes.
+
+
+### SPTrans
+
+Source: São Paulo Transport Authority (SPTrans)
+
+Public GTFS data and/or APIs used for academic and analytical purposes.
+
+
+## Disclaimer
+
+All analyses, interpretations, results, and conclusions presented in this repository are the sole responsibility of the author and do not represent official positions of the data providers.
+
+---
+
+## Academic Citation
+
+If you use this work in academic research, please cite the author and repository appropriately.
+
+---
+
+## Author
+Cintia I. Shinoda -->
