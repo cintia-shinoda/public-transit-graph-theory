@@ -13,11 +13,28 @@
 
 This repository contains analysis and tests conducted to explore and validate the hypotheses and results presented to the Undergraduate's Final Course Project (TCC): **“VULNERABILITY AND RESILIENCE OF THE SÃO PAULO PUBLIC TRANSIT NETWORK: A TOPOLOGICAL ANALYSIS BASED ON GRAPH THEORY”** ("Vulnerabilidade e Resiliência da Rede de Transporte Público de São Paulo: Uma Análise Topológica Baseada em Teoria dos Grafos"), a requirement for the Bachelor's Degree in Data Science at UNIVESP (Virtual University of the State of São Paulo).
 
+## Full Thesis
+The complete thesis, including detailed methodology, results, discussion, and references, is available in: [View the full thesis](docs/TCC.pdf).
+
+
 ---
 
 ## Key Findings
 #### Estação Brás is the bottleneck of the network
-With only 7 direct neighbors, the Brás CPTM station concentrates approximately 38% of the shortest paths of the network (classic articulator node in the complex networks paradigm - Albert, Jeong & Barabási, 2000). Its removal has disproportional impact to its local connectivity.
+
+<table>
+  <tr>
+    <td valign="center" style="width:40%">
+      <img src="outputs/mapa_top10_centralidades.png" alt="Map of the top 10 critical nodes according to degree, betweenness and closeness centrality metrics" width="100%">
+    </td>
+    <td valign="center" style="width:60%">
+      With only 7 direct neighbors, the Brás CPTM station concentrates approximately 38% of the shortest paths of the network (classic articulator node in the complex networks paradigm - Albert, Jeong & Barabási, 2000). Its removal has disproportional impact to its local connectivity.
+    </td>
+  </tr>
+</table>
+
+
+
 
 #### The network is resilient to random failures, but vulnerable to targeted attacks
 Empirical confirmation of the Albert-Barabási (2000) paradigm:
