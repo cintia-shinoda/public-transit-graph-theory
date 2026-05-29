@@ -47,6 +47,16 @@ Empirical confirmation of the Albert-Barabási (2000) paradigm:
 #### Centrality metrics are complementary
 Only 3 stations (Brás, Luz and Corinthians-Itaquera) appear in more than one top-10 ranking, and none of them appears in all three simultaneously. Each metric identifies a distinct dimension of criticality.
 
+**Intersection of the top-10 stations by degree, betweenness and closeness centrality metrics**
+
+| Intersection | Stops in common |
+|:---|:---:|
+| Degree $\cap$ Betweenness | 1 out of 10 |
+| Degree $\cap$ Closeness | 0 out of 10 |
+| Betweenness $\cap$ Closeness | 2 out of 10 |
+| In all three rankings simultaneously | 0 out of 10 |
+
+
 #### Institutional limit of the SPTrans network
 48 CPTM stations along branches extending to municipalities of the São Paulo Metropolitan Region remain disconnected from the bus network even with the transfer radius extended to 600 meters. The limit is not methodological, but institutional: SPTrans operates exclusively within the city of São Paulo.
 
@@ -184,7 +194,7 @@ pip install -r requirements.txt
 
 ---
 
-<!-- ## Licensing
+## Licensing
 
 ### Source Code
 All source code developed in this repository is licensed under the **Apache License 2.0**.
@@ -247,4 +257,4 @@ If you use this work in academic research, please cite the author and repository
 ---
 
 ## Author
-Cintia I. Shinoda -->
+Cintia I. Shinoda
