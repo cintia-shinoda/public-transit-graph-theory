@@ -1,5 +1,6 @@
 # Vulnerability and Resilience of São Paulo's Public Transit Network: A Topological Analysis Based on Graph Theory
 
+<br>
 
 > Selected for UNIVESP's official collection of outstanding final projects.
 > 
@@ -8,12 +9,13 @@
 > [Browse the collection](https://apps.univesp.br/tcc-pi/tcc/) (`filter by Cursos: Bacharelado em Ciência de Dados > Palavras-chave: grafos`)
 
 <br>
+<br>
 
 <p align="center">
-  <img src= "https://img.shields.io/badge/status-in%20progress-yellow" alt="Status do Projeto" />
+  <img src= "https://img.shields.io/badge/status-completed-brightgreen" alt="Status do Projeto" />
   <img src="https://img.shields.io/github/last-commit/cintia-shinoda/public-transit-graph-theory" alt="GitHub Last Commit" />
-  <img src="https://img.shields.io/github/forks/cintia-shinoda/public-transit-graph-theory" alt="GitHub Forks" />
-  <img src="https://img.shields.io/github/stars/cintia-shinoda/public-transit-graph-theory" alt="GitHub Stars" />
+  <!-- <img src="https://img.shields.io/github/forks/cintia-shinoda/public-transit-graph-theory" alt="GitHub Forks" />
+  <img src="https://img.shields.io/github/stars/cintia-shinoda/public-transit-graph-theory" alt="GitHub Stars" /> -->
 </p>
 
 <img src="outputs/mapa_paradas_modal_sp_rmsp.png" alt="Map of public transit stops in the SPTrans network" width="100%">
