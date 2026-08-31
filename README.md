@@ -1,6 +1,11 @@
 # Vulnerability and Resilience of São Paulo's Public Transit Network: A Topological Analysis Based on Graph Theory
 
-> Selected for UNIVESP's official [collection of outstanding final projects](https://apps.univesp.br/tcc-pi/tcc/).
+
+> Selected for UNIVESP's official collection of outstanding final projects.
+> [Read the full thesis (PDF)](https://cintia-shinoda.github.io/reports/report-sp-public-transit-graph-theory.pdf)
+> [Browse the collection](https://apps.univesp.br/tcc-pi/tcc/) (`filter by Cursos: Bacharelado em Ciência de Dados > Palavras-chave: grafos`)
+
+<br>
 
 <p align="center">
   <img src= "https://img.shields.io/badge/status-in%20progress-yellow" alt="Status do Projeto" />
