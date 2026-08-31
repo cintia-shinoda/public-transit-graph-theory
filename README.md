@@ -2,7 +2,9 @@
 
 
 > Selected for UNIVESP's official collection of outstanding final projects.
+> 
 > [Read the full thesis (PDF)](https://cintia-shinoda.github.io/reports/report-sp-public-transit-graph-theory.pdf)
+> 
 > [Browse the collection](https://apps.univesp.br/tcc-pi/tcc/) (`filter by Cursos: Bacharelado em Ciência de Dados > Palavras-chave: grafos`)
 
 <br>
