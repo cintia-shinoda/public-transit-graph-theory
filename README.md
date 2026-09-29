@@ -13,6 +13,7 @@
 
 <p align="center">
   <img src= "https://img.shields.io/badge/status-completed-brightgreen" alt="Status do Projeto" />
+  <a href="https://doi.org/10.5281/zenodo.23029768"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23029768.svg" alt="DOI" /></a>
   <img src="https://img.shields.io/github/last-commit/cintia-shinoda/public-transit-graph-theory" alt="GitHub Last Commit" />
   <img src="https://img.shields.io/github/forks/cintia-shinoda/public-transit-graph-theory" alt="GitHub Forks" />
   <img src="https://img.shields.io/github/stars/cintia-shinoda/public-transit-graph-theory" alt="GitHub Stars" />
