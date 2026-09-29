@@ -277,8 +277,6 @@ All analyses, interpretations, results, and conclusions presented in this reposi
 
 ## Academic Citation
 
-Use the **"Cite this repository"** button on GitHub to generate citation information.
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23029768.svg)](https://doi.org/10.5281/zenodo.23029768)
 
 Archived on Zenodo. Use the **"Cite this repository"** button on GitHub to generate citation information.
