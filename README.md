@@ -244,6 +244,8 @@ Their use remains subject to the original:
 
 Please refer to the official sources for details.
 
+Processed artifacts in `data/processed/` are derived from these datasets and remain subject to the same terms.
+
 
 ## Data Attribution
 
