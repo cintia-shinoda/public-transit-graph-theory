@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it using the metadata below."
+type: software
+title: "Vulnerability and Resilience of São Paulo's Public Transit Network: A Topological Analysis Based on Graph Theory (code and analysis)"
+authors:
+  - family-names: Shinoda
+    given-names: Cintia I.
+    orcid: "https://orcid.org/0009-0000-3959-0499"
+repository-code: "https://github.com/cintia-shinoda/public-transit-graph-theory"
+license: Apache-2.0
+keywords:
+  - graph theory
+  - public transit
+  - GTFS
+  - network resilience
+  - Sao Paulo
+abstract: >-
+  Code for modeling Sao Paulo's public transit network as a graph (22,000+ stops from GTFS data) and analyzing centrality and resilience.
+
+  Developed as the analytical basis of an undergraduate thesis in Data Science (UNIVESP, 2026).
+references:
+  - type: thesis
+    title: "Vulnerabilidade e resiliência da rede de transporte público de São Paulo: uma análise topológica baseada em teoria dos grafos"
+    authors:
+      - family-names: Shinoda
+        given-names: Cintia Izumi
+      - family-names: Monção
+        given-names: Daniel Regino
+      - family-names: Escribano Martinez
+        given-names: Fernando Miguel
+      - family-names: Camara
+        given-names: Pedro José de Assis Barbeito
+      - family-names: da Silva
+        given-names: Rogério Gonçalves
+      - family-names: Ferreira
+        given-names: Thiago Akira
+      - family-names: Gomes
+        given-names: Willy Paulino de Oliveira
+    institution:
+      name: "Universidade Virtual do Estado de São Paulo (UNIVESP)"
+    year: 2026
+    thesis-type: "Undergraduate thesis (B.Sc. in Data Science)"
+    url: "https://cintia-shinoda.github.io/reports/report-sp-public-transit-graph-theory.pdf"

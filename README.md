@@ -14,8 +14,8 @@
 <p align="center">
   <img src= "https://img.shields.io/badge/status-completed-brightgreen" alt="Status do Projeto" />
   <img src="https://img.shields.io/github/last-commit/cintia-shinoda/public-transit-graph-theory" alt="GitHub Last Commit" />
-  <!-- <img src="https://img.shields.io/github/forks/cintia-shinoda/public-transit-graph-theory" alt="GitHub Forks" />
-  <img src="https://img.shields.io/github/stars/cintia-shinoda/public-transit-graph-theory" alt="GitHub Stars" /> -->
+  <img src="https://img.shields.io/github/forks/cintia-shinoda/public-transit-graph-theory" alt="GitHub Forks" />
+  <img src="https://img.shields.io/github/stars/cintia-shinoda/public-transit-graph-theory" alt="GitHub Stars" />
 </p>
 
 <img src="outputs/mapa_paradas_modal_sp_rmsp.png" alt="Map of public transit stops in the SPTrans network" width="100%">
@@ -25,7 +25,7 @@
 This repository contains analysis and tests conducted to explore and validate the hypotheses and results presented to the Undergraduate's Final Course Project (TCC): **“VULNERABILITY AND RESILIENCE OF THE SÃO PAULO PUBLIC TRANSIT NETWORK: A TOPOLOGICAL ANALYSIS BASED ON GRAPH THEORY”** ("Vulnerabilidade e Resiliência da Rede de Transporte Público de São Paulo: Uma Análise Topológica Baseada em Teoria dos Grafos"), a requirement for the Bachelor's Degree in Data Science at UNIVESP (Virtual University of the State of São Paulo).
 
 ## Full Thesis
-The complete thesis, including detailed methodology, results, discussion, and references, is available in: [View the full thesis](docs/TCC.pdf).
+The complete thesis, including detailed methodology, results, discussion, and references, is available in: [View the full thesis](https://cintia-shinoda.github.io/reports/report-sp-public-transit-graph-theory.pdf).
 
 
 ---
@@ -78,7 +78,7 @@ Only 3 stations (Brás, Luz and Corinthians-Itaquera) appear in more than one to
 ```bash
 public-transit-graph-theory/
 ├── data/              # Datasets and data artifacts
-│   ├── raw/           # Initial datasets (unprocessed)
+│   ├── raw/           # Initial datasets (unprocessed). Not versioned: download from the sources listed in the [Datasets](#datasets) section.
 │   │   ├── dryad/
 │   │   ├── gtfs/
 │   │   └── ibge/
@@ -87,7 +87,6 @@ public-transit-graph-theory/
 │
 ├── docs/              # Documentation & References
 │   ├── bibliography/
-│   │   ├── papers/
 │   │   └── reading-outlines/
 │
 ├── notebooks/
@@ -97,11 +96,11 @@ public-transit-graph-theory/
 │   │   ├── 02_test-OSMnx.ipynb
 │   │   ├── 03_model-classification-hugging-face.ipynb
 │   │   └── sp_transit_classifier.joblib
-│   ├── 01_eda_gtfs.ipynb         # Exploratory Data Analysis
-│   ├── 02_grafo.ipynb            # Graph modeling, Cmponents and Creation of Intermodal Integration
-│   ├── 03_vulnerabilidade.ipynb  # Vulnerability Analysis
-│   ├── 04_resiliencia.ipynb      # Resilience Analysis
-│   └── 05_modelo-classificacao.ipynb
+│   ├── 1_eda_gtfs.ipynb         # Exploratory Data Analysis
+│   ├── 2_grafo.ipynb            # Graph modeling, Components and Creation of Intermodal Integration
+│   ├── 3_vulnerabilidade.ipynb  # Vulnerability Analysis
+│   ├── 4_resiliencia.ipynb      # Resilience Analysis
+│   └── 5_modelo-classificacao.ipynb
 │
 ├── outputs/
 │   ├── curvas_resiliencia_kappa.png     # Molloy-Reed parameter kappa
@@ -124,10 +123,11 @@ public-transit-graph-theory/
 
 ## Datasets
 
-| Dataset | Link |
-|---|---|
-| GTFS SPTrans | https://www.sptrans.com.br/desenvolvedores/ |
-| IBGE | https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/ |
+| Dataset | Used in | Link |
+|---|---|---|
+| GTFS SPTrans | Main analysis |https://www.sptrans.com.br/desenvolvedores/ |
+| IBGE | Main analysis | https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/ |
+| Dryad (SPTrans ticketing sample) | Initial exploration only | https://doi.org/10.15146/R3VM28 |
 
 
 <br>
@@ -157,14 +157,15 @@ ERM-GTFS-SPTrans: [View the complete interactive diagram](https://dbdiagram.io/e
 
 ---
 
-<!-- ## Notebooks de Exploração
+## Exploratory Notebooks
 
 |  | Notebook | Description |
 |---|---|---|
-| 0 | [Dryad's EDA](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/00_eda-dryad.ipynb) | Exploratory data analysis of a sample of ticketing data from SPTrans |
-| 1 | [GTFS-SPTrans' EDA](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/01_eda-gtfs.ipynb) | Exploratory analysis of GTFS from SPTrans |
-| 2 | [OSMnx Test](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/02_test-OSMnx.ipynb) | Testing OSMnx for mapping and analyzing the transportation network of São Paulo |
-| 3 | [Hugging Face's SPTrans Classifier Model](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/03_hugging-face.ipynb) | Implementation of a classification model for SPTrans data | -->
+| 0 | [Dryad's EDA](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/exploratory/00_eda-dryad.ipynb) | Exploratory data analysis of a sample of ticketing data from SPTrans |
+| 1 | [GTFS-SPTrans' EDA](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/exploratory/01_research-gtfs.ipynb) | Exploratory analysis of GTFS from SPTrans |
+| 2 | [OSMnx Test](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/exploratory/02_test-OSMnx.ipynb) | Testing OSMnx for mapping and analyzing the transportation network of São Paulo |
+| 3 | [Hugging Face's SPTrans Classifier Model](https://github.com/cintia-shinoda/public-transit-graph-theory/blob/main/notebooks/exploratory/03_model-classification-hugging-face.ipynb) | Implementation of a classification model for SPTrans data |
+
 
 ## Notebooks
 
@@ -203,6 +204,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+4. Download the datasets from the links in the [Datasets](#datasets) section and place them in `data/raw/gtfs/` and `data/raw/ibge/`. The Dryad sample (`data/raw/dryad/`) is only needed for the exploratory notebook.
+
 ---
 
 ## Licensing
@@ -219,7 +222,7 @@ This allows:
 - Sharing
 - Adaptation
 - Citation
-- 
+
 Provided that:
 - Proper attribution is given
 - No commercial use is made
@@ -229,7 +232,9 @@ Provided that:
 This repository uses publicly available third-party datasets, including:
 - Brazilian Institute of Geography and Statistics (IBGE)
 - São Paulo Transport Authority (SPTrans)
-**These datasets are NOT covered by this repository’s licenses.**
+- Dryad: "Bilhetagem de Transporte Público - São Paulo" (Majdoub, 2018), a sample of SPTrans ticketing data
+
+>**These datasets are NOT covered by this repository’s licenses.**
 
 Their use remains subject to the original:
 - terms of use
@@ -254,6 +259,11 @@ Source: São Paulo Transport Authority (SPTrans)
 
 Public GTFS data and/or APIs used for academic and analytical purposes.
 
+### Dryad Sample
+Source: Majdoub, Bassam (2018). *Bilhetagem de Transporte Público - São Paulo* [Dataset]. Dryad. https://doi.org/10.15146/R3VM28
+
+Sample of SPTrans ticketing data, used only in the initial exploratory analysis.
+
 
 ## Disclaimer
 
@@ -261,9 +271,10 @@ All analyses, interpretations, results, and conclusions presented in this reposi
 
 ---
 
+
 ## Academic Citation
 
-If you use this work in academic research, please cite the author and repository appropriately.
+Use the **"Cite this repository"** button on GitHub (generated from `CITATION.cff`).
 
 ---
 
